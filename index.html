@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,800&display=swap" rel="stylesheet">
+        <link rel="icon" href="/assets/paper-plane.png">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <script defer src="/script.js"></script>
+        <title>Rebeca Cuevas</title>
+    </head>
+
+    <body>
+
+        <!--Menú-->
+        <header>
+            <nav>
+                <ul class="menu">
+                     <li class="menu-item"><a href="#about">Acerca de mí</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!--Encabezado principal-->
+            <h1 id="home">Rebeca Cuevas</h1><hr>
+
+            <!--Página I - Menú Portfolio-->
+            <section class="click">
+                <div class="divui">
+                    <p class="click-ui"><a class="ui-anchor" href="#ui" lang="en">User Interface</a></p>
+                </div>
+
+                <div class="divui-two">
+                    <p class="click-ui"><a class="ui-anchor" href="#ad" lang="en">Advertisement</a></p>
+                </div>
+            </section>
+
+            <!--Página II - Acerca de mí-->
+            <section class="about" id="about">
+                <div class="me">
+                    <p class="me-title">Acerca de mí</p><hr>
+                    <p><strong>¡Hola!</strong> <br><br> Mi nombre es Rebeca Cuevas, soy desarrolladora front end, diseñadora self-taught y fotógrafa. Mi camino en el desarrollo web comenzó en 2018 gracias a un proyecto final de la facultad, al ver las reacciones del público me di cuenta que podría serle útil a más de una persona. <br><br><strong class="web">¿Y qué mejor lugar que la web para lograr que una herramienta sea accesible para el mayor número de personas posibles?</strong> <br> <br> Los siguientes años no solo continuaron conduciéndome hacía el camino del desarrollo de web apps, sino que me permitieron experimentar una y otra vez lo maravilloso que resulta trabajar en equipos interdisciplinarios gracias a que tuve la oportunidad de ser parte de Velómovil RS, el FotoClub de Ingenieros y la Asociación Aeroespacial de la Facultad de Ingeniería de la Universidad Nacional Autónoma de México. <br><br> Actualmente estoy cursando el bootcamp de Generation México para convertirme en desarrolladora Java Full Stack. <br> <br> Mi pasatiempo es aprender idiomas porque me encantan los retos y el identificar patrones. <br><br>
+                    <img src="/assets/mexico.png" width="100">
+                    <img src="/assets/united-states.png" width="80">
+                    <img src="/assets/brazil.png" width="80">
+                    <img src="/assets/china.png" width="80">
+
+                    <a href="/assets/my-resume.pdf" download="rebeca-cuevas-cv.pdf" target="_blank"><button class="cv">Descarga mi CV</button></a>
+               </div>
+            </section>
+
+            <!--Página III - Portfolio ads-->
+            <section class="container" id="ad">
+                <div class="ad-one">
+                    <img class="bottle" src="/assets/flex01.png" alt="">
+                    <img class="bottle" src="/assets/flex02.png" alt="">
+                    <img class="bottle" src="/assets/flex03.png" alt="">
+                    <img class="peanuts" src="/assets/botanas01.png" alt="">
+                    <img class="peanuts" src="/assets/botanas02.png" alt="">
+                    <img class="peanuts" src="/assets/botanas03.png" alt="">
+                </div>
+            </section>
+            <br>
+
+            <!--Página IV - Portfolio UI-->
+            <section class="container" id="ui">
+                <div class="ad-two">
+                    <img class="estate" src="/assets/realestate01.png">
+                    <img class="estate" src="/assets/realestate02.png">
+                    <img class="estate" src="/assets/realestate03.png">    
+                    <img class="tutti" src="/assets/candies.jpg">
+                    <img class="tutti" src="/assets/shoes-two.png">
+                </div><br>
+            </section>
+            <br>
+            <hr>
+
+            <!--Página V - Formulario-->
+            <section class="form" id="contact">
+                <div class="contact">
+                    <h3>Contacto</h3>
+
+                    <form id="form" action="#" onsubmit="return checkforblank()">
+                        <div>
+                            <label for="name">Nombre</label><br>
+                            <input class="fill" id="name" name="name" type="text" value="">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input class="fill" id="email" name="email" type="email" value=""><br>
+                        </div>
+
+                        <div>
+                            <label for="tel">Teléfono</label><br>
+                            <input class="fill" id="tel" name="tel" type="number" value=""><br>
+                        </div>
+        
+                        <fieldset id="radio">
+                            <legend>¿En qué te puedo ayudar?</legend>
+        
+                            <input id="ecomm" name="radio" type="radio" value="ecomm">
+                            <label for="ecomm">Mi negocio necesita un ecommerce</label><br>
+        
+                            <input id="portfolio" name="radio" type="radio" value="portfolio">
+                            <label for="portfolio">Quiero un sitio web para mostrar mi trabajo</label><br>
+        
+                            <input id="glowup" name="radio" type="radio" value="glowup">
+                            <label for="glowup">Mi sitio web se quedó en los 90's, ¡necesita un glow up!</label>
+        
+                        </fieldset><br>
+        
+                        <label for="message">¡Cuéntame más!</label><br>
+                        <textarea class="fill" id="message" name="textarea"></textarea><br>
+
+                        <button type="submit">Enviar</button>     
+                    </form><br>
+
+                    <div class="social">
+                        <a href="https://linkedin.com/in/rebecacuevascs/" target="_blank"><img src="/assets/linkedin-icon.png" width="50" alt=""></a>
+                        <a href="https://github.com/rebecacuevas" target="_blank"><img src="/assets/github-icon.png" width="50" alt=""></a>
+                    </div>
+                </div>
+            </main>
+
+            <!--Pie de página y botón que lleva a Página I -->
+            <div>
+                <footer><hr>
+                    Rebeca Cuevas | Front End Developer + Designer | <a href="#home">Llévame arriba</a>
+                </footer>
+            </div>
+    </body>
+</html>
